@@ -1,0 +1,36 @@
+{
+  "private": true,
+  "engines": {
+    "node": "^16"
+  },
+  "scripts": {
+    "info": "echo \"Env:\n  LICENSEGEN_VERIFY_KEY=${LICENSEGEN_VERIFY_KEY:-<not set>}\n  LICENSEGEN_ACCOUNT_ID=${LICENSEGEN_ACCOUNT_ID:-<not set>}\"",
+    "start-client": "parcel serve client/index.html --port 1234 --hmr-port 1234 --dist-dir dist/client",
+    "start-server": "parcel serve server/index.html --port 5678 --hmr-port 5678 --dist-dir dist/server",
+    "start": "yarn run info && concurrently 'yarn run start-client' 'yarn run start-server'"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "2.4.0",
+    "@types/prop-types": "^15.7.4",
+    "@types/react": "^17.0.42",
+    "@types/react-dom": "^17.0.14",
+    "buffer": "^6.0.3",
+    "concurrently": "^7.0.0",
+    "events": "^3.3.0",
+    "parcel": "^2.4.0",
+    "process": "^0.11.10",
+    "stream-browserify": "^3.0.0"
+  },
+  "dependencies": {
+    "crypto-browserify": "^3.12.0",
+    "elliptic": "^6.5.4",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-file-drop": "^3.1.3",
+    "react-loader-spinner": "^6.0.0-0",
+    "react-qr-code": "^2.0.3",
+    "react-webcam-qr-scanner.ts": "^1.0.4",
+    "uuid": "^8.3.2",
+    "webrtc-adapter": "^8.1.1"
+  }
+}
