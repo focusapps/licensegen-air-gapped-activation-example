@@ -25,10 +25,10 @@ First up, configure a few environment variables:
 
 ```bash
 # Your LicenseGen account's Ed25519 verify key
-export LICENSEGEN_VERIFY_KEY="e8601e48b69383ba520245fd07971e983d06d22c4257cfd82304601479cee788"
+export LICENSEGEN_VERIFY_KEY="002e17159b4321fd8705ffeb52e5c25c19d8999e29310c49e35f7769844bd587"
 
 # Your LicenseGen account ID
-export LICENSEGEN_ACCOUNT_ID="1fddcec8-8dd3-4d8d-9b16-215cac0f9b52"
+export LICENSEGEN_ACCOUNT_ID="2ed45aa2-b1e9-4ba7-83bb-a037ccf5a85e"
 ```
 
 You can either run each line above within your terminal session before starting the app, or you can add the above contents to your `~/.bashrc` file and then run `source ~/.bashrc` after saving the file.

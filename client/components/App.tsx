@@ -5,7 +5,7 @@ import Verify from './steps/Verify'
 import { useState } from 'react'
 
 const {
-  LICENSEGEN_VERIFY_KEY = 'e8601e48b69383ba520245fd07971e983d06d22c4257cfd82304601479cee788',
+  LICENSEGEN_VERIFY_KEY = '002e17159b4321fd8705ffeb52e5c25c19d8999e29310c49e35f7769844bd587',
 } = process.env
 
 if (!LICENSEGEN_VERIFY_KEY) {
